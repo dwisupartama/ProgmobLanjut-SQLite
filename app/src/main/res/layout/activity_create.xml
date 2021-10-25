@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".CreateActivity">
+
+    <TextView
+        android:id="@+id/labelNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nomor Induk Mahasiswa (NIM)" />
+
+    <EditText
+        android:id="@+id/inputNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelNIM"
+        android:ems="10"
+        android:hint="Masukan NIM"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/labelNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:layout_below="@id/inputNIM"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelNama"
+        android:ems="10"
+        android:hint="Masukan Nama Lengkap"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/labelAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:layout_below="@id/inputNama"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/inputAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelAlamat"
+        android:ems="10"
+        android:hint="Masukan ALamat"
+        android:inputType="textLongMessage"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_below="@id/inputAlamat"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
